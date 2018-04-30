@@ -1,6 +1,7 @@
 package com.example.mikerudyy.geoquiz.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button trueButton;
     private Button falseButton;
     private ImageButton nextButton;
+    private Button cheatButton;
     private TextView questionTextView;
 
     private Resources resources;
@@ -36,20 +38,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG,"onCreate() - set values / Start");
+        Log.d(TAG, "onCreate() - set values / Start");
         setUpActivity(savedInstanceState);
         buttonActions();
-        Log.d(TAG,"onCreate() - set values / End");
+        Log.d(TAG, "onCreate() - set values / End");
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.d(TAG,"Device was rotated");
-       outState.putInt(KEY_INDEX,currentIndex);
+        Log.d(TAG, "Device was rotated");
+        outState.putInt(KEY_INDEX, currentIndex);
     }
 
-    protected void setUpActivity(Bundle savedinstanceState){
+    protected void setUpActivity(Bundle savedinstanceState) {
         setContentView(R.layout.activity_main);
 
         resources = getResources();
@@ -57,6 +59,8 @@ public class MainActivity extends AppCompatActivity {
         trueButton = findViewById(R.id.true_button);
         falseButton = findViewById(R.id.false_button);
         nextButton = findViewById(R.id.next_button);
+        cheatButton = findViewById(R.id.cheat_button);
+        
         questionTextView = findViewById(R.id.question_text_view);
 
         questions = new Question[]{
@@ -74,12 +78,12 @@ public class MainActivity extends AppCompatActivity {
                         resources.getBoolean(R.bool.answer_oceans))
         };
 
-        if (savedinstanceState !=null){
+        if (savedinstanceState != null) {
             questionTextView.setText(
                     questions[savedinstanceState.getInt(KEY_INDEX)]
                             .getTextResId()
             );
-        }else{
+        } else {
             questionTextView.setText(
                     questions[0].getTextResId())
             ;
@@ -128,5 +132,15 @@ public class MainActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+
+        cheatButton.setOnClickListener((v -> {
+            startActivity(getCheatIntent());
+        }));
+    }
+
+    protected Intent getCheatIntent(){
+        Intent intent = new Intent(MainActivity.this,CheatActivity.class);
+        intent.putExtra("questionId",currentIndex);
+        return intent;
     }
 }

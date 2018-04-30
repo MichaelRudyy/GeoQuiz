@@ -5,7 +5,7 @@ import android.content.res.Resources;
 import com.example.mikerudyy.geoquiz.R;
 
 /**
- * Думаю что по факту правильней было бы создавать ЙГуіешщті с прееменными ID что по вопросу,
+ * Думаю что по факту правильней было бы создавать questions с прееменными ID что по вопросу,
  * что по ответу
  *
  * Created by mikeRudyy on 27-Mar-18.
@@ -14,8 +14,6 @@ import com.example.mikerudyy.geoquiz.R;
 public class Question {
     private int textResId;
     private boolean answer;
-
-
 
     public Question(int textResId, boolean answer) {
         this.textResId = textResId;
