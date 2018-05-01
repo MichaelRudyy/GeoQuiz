@@ -36,20 +36,20 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.d(TAG,"onCreate() - set values / Start");
+        Log.d(TAG, "onCreate() - set values / Start");
         setUpActivity(savedInstanceState);
         buttonActions();
-        Log.d(TAG,"onCreate() - set values / End");
+        Log.d(TAG, "onCreate() - set values / End");
     }
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        Log.d(TAG,"Device was rotated");
-       outState.putInt(KEY_INDEX,currentIndex);
+        Log.d(TAG, "Device was rotated");
+        outState.putInt(KEY_INDEX, currentIndex);
     }
 
-    protected void setUpActivity(Bundle savedinstanceState){
+    protected void setUpActivity(Bundle savedinstanceState) {
         setContentView(R.layout.activity_main);
 
         resources = getResources();
@@ -74,12 +74,12 @@ public class MainActivity extends AppCompatActivity {
                         resources.getBoolean(R.bool.answer_oceans))
         };
 
-        if (savedinstanceState !=null){
+        if (savedinstanceState != null) {
             questionTextView.setText(
                     questions[savedinstanceState.getInt(KEY_INDEX)]
                             .getTextResId()
             );
-        }else{
+        } else {
             questionTextView.setText(
                     questions[0].getTextResId())
             ;
