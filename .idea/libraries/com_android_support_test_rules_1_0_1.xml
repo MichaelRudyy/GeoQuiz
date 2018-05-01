@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support.test:rules-1.0.1">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_test_rules_1_0_1.xml
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-1.0.1.aar/224ca4b6809e09ff56d82344015cd970/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-1.0.1.aar/224ca4b6809e09ff56d82344015cd970/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-1.0.1.aar/29b33acd997278b68310b652c85473df/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/rules-1.0.1.aar/29b33acd997278b68310b652c85473df/res" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_test_rules_1_0_1.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

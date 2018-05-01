@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support:animated-vector-drawable-26.1.0">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_animated_vector_drawable_26_1_0.xml
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/79d271b90cfbf4af01daf8b347444218/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/79d271b90cfbf4af01daf8b347444218/res" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/70f0a950c5399547c681e4941ca0cbac/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/70f0a950c5399547c681e4941ca0cbac/res" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_animated_vector_drawable_26_1_0.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

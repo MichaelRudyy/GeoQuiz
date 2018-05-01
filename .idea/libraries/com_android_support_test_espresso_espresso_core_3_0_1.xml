@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support.test.espresso:espresso-core-3.0.1">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_test_espresso_espresso_core_3_0_1.xml
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.0.1.aar/d3c12bf24589e7db8d3df5620ffc7c44/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.0.1.aar/d3c12bf24589e7db8d3df5620ffc7c44/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.0.1.aar/0588eddf88b9e0ec5247596d242f2d21/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-core-3.0.1.aar/0588eddf88b9e0ec5247596d242f2d21/jars/classes.jar!/" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_test_espresso_espresso_core_3_0_1.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

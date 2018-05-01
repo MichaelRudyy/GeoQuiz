@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support:support-compat-26.1.0">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_support_compat_26_1_0.xml
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4604bee23a141a038aea506f49b1d287/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/4604bee23a141a038aea506f49b1d287/res" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/c35977e9f112aa63eb55d17518196f5b/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/c35977e9f112aa63eb55d17518196f5b/res" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_support_compat_26_1_0.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

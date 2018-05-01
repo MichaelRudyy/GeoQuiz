@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support.test.espresso:espresso-idling-resource-3.0.1">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_test_espresso_espresso_idling_resource_3_0_1.xml
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-idling-resource-3.0.1.aar/fc10fd3bbf7d5b3115e43e6e45afee0b/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-idling-resource-3.0.1.aar/fc10fd3bbf7d5b3115e43e6e45afee0b/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-idling-resource-3.0.1.aar/442d3b7a2c25e31e29f0e86e652018f5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/espresso-idling-resource-3.0.1.aar/442d3b7a2c25e31e29f0e86e652018f5/res" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_test_espresso_espresso_idling_resource_3_0_1.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

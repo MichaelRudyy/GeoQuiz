@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="android.arch.lifecycle:runtime-1.0.0">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/android_arch_lifecycle_runtime_1_0_0.xml
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ad8fc7f288ef685e55f9acf18f8ae3ff/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/ad8fc7f288ef685e55f9acf18f8ae3ff/res" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9ba2ed928a9e466d5411ef94e855107b/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/9ba2ed928a9e466d5411ef94e855107b/jars/classes.jar!/" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__android_arch_lifecycle_runtime_1_0_0.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

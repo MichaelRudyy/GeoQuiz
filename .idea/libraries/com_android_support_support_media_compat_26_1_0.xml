@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support:support-media-compat-26.1.0">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_support_media_compat_26_1_0.xml
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/1777a2943a1f72ec5ea52e77fddbcaad/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/1777a2943a1f72ec5ea52e77fddbcaad/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6526c73670d5aa24f68923752fa5d0ff/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/6526c73670d5aa24f68923752fa5d0ff/res" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_support_media_compat_26_1_0.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

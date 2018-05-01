@@ -8,7 +8,6 @@ import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,11 +17,10 @@ import com.example.mikerudyy.geoquiz.model.Question;
 public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
-    private static final String KEY_INDEX = "index";
 
     private Button trueButton;
     private Button falseButton;
-    private ImageButton nextButton;
+    private Button nextButton;
     private TextView questionTextView;
 
     private Resources resources;
@@ -36,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< HEAD
         Log.d(TAG, "onCreate() - set values / Start");
         setUpActivity(savedInstanceState);
         buttonActions();
@@ -50,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void setUpActivity(Bundle savedinstanceState) {
+=======
+        Log.d(TAG,"onCreate() - set-up's values");
+        setUpActivity();
+        buttonActions();
+        Log.d(TAG,"onCreate() - send of et-up's values");
+    }
+
+    protected void setUpActivity(){
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating
         setContentView(R.layout.activity_main);
 
         resources = getResources();
@@ -74,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
                         resources.getBoolean(R.bool.answer_oceans))
         };
 
+<<<<<<< HEAD
         if (savedinstanceState != null) {
             questionTextView.setText(
                     questions[savedinstanceState.getInt(KEY_INDEX)]
@@ -86,6 +95,9 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
+=======
+        questionTextView.setText(questions[0].getTextResId());
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating
     }
 
     protected void checkAnswer(boolean userAnswer) {
@@ -128,5 +140,37 @@ public class MainActivity extends AppCompatActivity {
                 updateQuestion();
             }
         });
+    }
+
+    // Voids just to look how activity life cycle works
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d(TAG,"onStart()");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d(TAG,"onStop()");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d(TAG,"onDestroy()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d(TAG,"onPause()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d(TAG,"onResume()");
     }
 }

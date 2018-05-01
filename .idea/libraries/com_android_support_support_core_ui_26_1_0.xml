@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support:support-core-ui-26.1.0">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_support_core_ui_26_1_0.xml
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/fa05f4d4d1a4a06f2d483f52dfe47ba9/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/fa05f4d4d1a4a06f2d483f52dfe47ba9/jars/classes.jar!/" />
+=======
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/d95b7fda83a6eee23c2b39c66e99db7f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/d95b7fda83a6eee23c2b39c66e99db7f/jars/classes.jar!/" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_support_core_ui_26_1_0.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>

@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support.constraint:constraint-layout-1.0.2">
     <CLASSES>
+<<<<<<< HEAD
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/77046850dd25efda3dfcb4c0fccc140b/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/77046850dd25efda3dfcb4c0fccc140b/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fec5eefa45f3246c80ffe823e7ebb052/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/fec5eefa45f3246c80ffe823e7ebb052/res" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating
     </CLASSES>
     <JAVADOC />
     <SOURCES />

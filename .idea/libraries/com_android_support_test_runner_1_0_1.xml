@@ -1,8 +1,13 @@
 <component name="libraryTable">
   <library name="com.android.support.test:runner-1.0.1">
     <CLASSES>
+<<<<<<< HEAD:.idea/libraries/com_android_support_test_runner_1_0_1.xml
       <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/290fd116576a231bdf34b98c74f9e75c/res" />
       <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/290fd116576a231bdf34b98c74f9e75c/jars/classes.jar!/" />
+=======
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/944216cf26d92a09fe262e2f5ced8db9/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/runner-1.0.1.aar/944216cf26d92a09fe262e2f5ced8db9/res" />
+>>>>>>> parent of bd6b556... add the saving instance of a message during rotating:.idea/libraries/Gradle__com_android_support_test_runner_1_0_1.xml
     </CLASSES>
     <JAVADOC />
     <SOURCES>
