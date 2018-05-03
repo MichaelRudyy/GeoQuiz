@@ -13,6 +13,11 @@
         android:orientation="vertical">
 
         <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/str_before_cheat_answer"/>
+
+        <TextView
             android:id="@+id/cheat_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -25,11 +30,10 @@
             android:orientation="vertical"
             android:gravity="center">
             <Button
-                android:id="@+id/back_button"
+                android:id="@+id/show_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/back_button"/>
+                android:text="@string/show_button"/>
         </LinearLayout>
-
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

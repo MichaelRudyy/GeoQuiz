@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = "MainActivity";
     private static final String KEY_INDEX = "index";
+    private static final int REQUEST_CODE_CHEAT = 0;
 
     private Button trueButton;
     private Button falseButton;
@@ -60,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
         falseButton = findViewById(R.id.false_button);
         nextButton = findViewById(R.id.next_button);
         cheatButton = findViewById(R.id.cheat_button);
-        
+
         questionTextView = findViewById(R.id.question_text_view);
 
         questions = new Question[]{
@@ -134,13 +135,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         cheatButton.setOnClickListener((v -> {
-            startActivity(getCheatIntent());
+            Intent intent = CheatActivity
+                    .newIntent(
+                            MainActivity.this,
+                            questions[currentIndex].getAnswer()
+                    );
+            startActivityForResult(intent,REQUEST_CODE_CHEAT);
         }));
-    }
-
-    protected Intent getCheatIntent(){
-        Intent intent = new Intent(MainActivity.this,CheatActivity.class);
-        intent.putExtra("questionId",currentIndex);
-        return intent;
     }
 }

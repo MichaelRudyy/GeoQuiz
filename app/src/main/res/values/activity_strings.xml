@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Main Activity Strings -->
     <string name="true_button">True</string>
     <string name="false_button">False</string>
     <string name="next_button">Next</string>
@@ -9,4 +10,8 @@
 
     <string name="correct_toast">Correct</string>
     <string name="incorrect_toast">Incorrect</string>
+
+    <!-- Cheat Activity Strings -->
+    <string name="show_button">Show</string>
+    <string name="str_before_cheat_answer">Correct answer is</string>
 </resources>
