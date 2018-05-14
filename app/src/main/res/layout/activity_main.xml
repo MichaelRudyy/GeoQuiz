@@ -16,10 +16,10 @@
         tools:layout_editor_absoluteY="0dp"-->
 
         <TextView
+            android:id="@+id/cheater_status_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="ver 1"/>
+            android:gravity="center"/>
 
         <TextView
             android:id="@+id/question_text_view"

@@ -2,11 +2,16 @@ package com.example.mikerudyy.geoquiz.activity;
 
 import com.example.mikerudyy.geoquiz.R;
 
+import android.animation.Animator;
+import android.animation.AnimatorListenerAdapter;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewAnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -44,14 +49,14 @@ public class CheatActivity extends AppCompatActivity {
         textView.setText(String.valueOf(answer));
     }
 
-    private void setAnswerShownResult(boolean isAnswerShown){
+    private void setAnswerShownResult(boolean isAnswerShown) {
         Intent data = new Intent();
-        data.putExtra(EXTRA_SHOW_ANSWER,isAnswerShown);
-        setResult(RESULT_OK,data);
+        data.putExtra(EXTRA_SHOW_ANSWER, isAnswerShown);
+        setResult(RESULT_OK, data);
     }
 
     public static boolean isAnswerShown(Intent result) {
-        return result.getBooleanExtra(EXTRA_SHOW_ANSWER,false);
+        return result.getBooleanExtra(EXTRA_SHOW_ANSWER, false);
     }
 
     private void buttonActions() {
@@ -64,6 +69,4 @@ public class CheatActivity extends AppCompatActivity {
             }
         });
     }
-
-
 }

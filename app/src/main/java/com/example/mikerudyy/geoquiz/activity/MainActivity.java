@@ -3,6 +3,7 @@ package com.example.mikerudyy.geoquiz.activity;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.res.Resources;
+import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,8 +28,11 @@ public class MainActivity extends AppCompatActivity {
     private ImageButton nextButton;
     private Button cheatButton;
     private TextView questionTextView;
+    private TextView cheaterStutsTextView;
 
     private Resources resources;
+
+    private boolean userIsCheater;
 
     @SuppressLint("ResourceType")
     private Question[] questions;
@@ -61,6 +65,11 @@ public class MainActivity extends AppCompatActivity {
         falseButton = findViewById(R.id.false_button);
         nextButton = findViewById(R.id.next_button);
         cheatButton = findViewById(R.id.cheat_button);
+        cheaterStutsTextView = findViewById(R.id.cheater_status_text_view);
+
+        cheaterStutsTextView.setText("Version of SDK is : " + Build.VERSION.SDK);
+
+        //cheaterStutsTextView.setText(String.valueOf(userIsCheater));
 
         questionTextView = findViewById(R.id.question_text_view);
 
@@ -142,5 +151,19 @@ public class MainActivity extends AppCompatActivity {
                     );
             startActivityForResult(intent,REQUEST_CODE_CHEAT);
         }));
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != RESULT_OK){
+            return;
+        }else if (requestCode == REQUEST_CODE_CHEAT){
+            if (data==null){
+                return;
+            }else{
+                userIsCheater = CheatActivity.isAnswerShown(data);
+                cheaterStutsTextView.setText(String.valueOf(userIsCheater));
+            }
+        }
     }
 }
